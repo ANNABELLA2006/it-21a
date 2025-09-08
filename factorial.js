@@ -6,7 +6,12 @@ const rl = readline.createInterface ({
 })
 
 function mainMenu(){
+    rl.question("Enter your choice (1-3)", choice => {
+    } else if (choice==="2") {
+    } else if (choice === "3") {
+ } else {
 
+ }
 }
 
 console.log("factorial Application");
@@ -43,8 +48,11 @@ rl.question("Enter your choice (1-3)", choice => {
         console.log("Exiting program... Goodbye");
         rl.close();
     }else{
-        console.log("Invalid Choice. Please try again.")
+        console.log("Invalid Choice. Please try again.") 
+        mainMenu() ;
     } 
 
 
 })
+
+mainMenu();
